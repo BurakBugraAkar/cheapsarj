@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="output.css" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/dist/event.js"></script>
 </head>
 <body class="bg-[#272934] text-white">
 
@@ -80,8 +82,8 @@
           </a>
         </div>
       </div>
-      <div class="mx-auto max-w-3xl text-center max-[850px]:max-w-[450px] ">
-        <img src="https://cdn.discordapp.com/attachments/624951639476011018/1104134303727747232/infographic_3dsdfsd.png" alt="Logo">
+      <div class="mx-auto max-w-3xl text-center max-[850px]:max-w-[450px] select-none ">
+        <img src="https://cdn.discordapp.com/attachments/624951639476011018/1104134303727747232/infographic_3dsdfsd.png" draggable="false" alt="Logo">
       </div>
     </div>
   </section> 
@@ -159,36 +161,7 @@
           </th>
         </tr>
       </thead>
-    
-      <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
-        <tr>
-          <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900 dark:text-white">
-            <div class="flex gap-x-4">
-              <img class="h-10 w-10 flex-none rounded-full bg-gray-50 " src="https://cdn.discordapp.com/attachments/748294040163844166/1094023866885619812/CheapSarj-logo-TESLA.PNG" alt="">
-              <p class="my-auto pl-4">Tesla SuperCharger</p>
-            </div>
-          </td>
-          <td class="whitespace-nowrap px-4 py-2 text-gray-700 dark:text-gray-200 text-center">8.6 TL/kWh</td>
-          <td class="whitespace-nowrap px-4 py-2 text-gray-700 dark:text-gray-200 text-center">8.6 TL/kWh	</td>
-          <td class="whitespace-nowrap px-4 py-2 text-center">
-            <a href="https://l24.im/zB5tJX" class="inline-block rounded border border-[#4caf50] bg-[#4caf50] hover:bg-transparent px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700">Harita</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900 dark:text-white">
-            <div class="flex gap-x-4">
-              <img class="h-10 w-10 flex-none rounded-full bg-gray-50" src="https://cdn.discordapp.com/attachments/748294040163844166/1094023867145654303/CheapSarj-logo-TRUGO.png" alt="">
-              <p class="my-auto pl-4">Trugo</p>
-            </div>
-          </td>
-          <td class="whitespace-nowrap px-4 py-2 text-gray-700 dark:text-gray-200 text-center">7.99 TL/kWh</td>
-          <td class="whitespace-nowrap px-4 py-2 text-gray-700 dark:text-gray-200 text-center">7.99 TL/kWh	</td>
-          <td class="whitespace-nowrap px-4 py-2 text-center">
-            <a href="https://l24.im/0fZD1R" class="inline-block rounded border border-[#4caf50] bg-[#4caf50] hover:bg-transparent px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700">Harita</a>
-          </td>
-        </tr>
-
-      </tbody>
+      <tbody class="divide-y divide-gray-200 dark:divide-gray-700" id="charing_table"></tbody>
     </table>
   </div>
   <footer aria-label="Site Footer" class="bg-[#2d3040] dark:bg-[#2d3040]">
