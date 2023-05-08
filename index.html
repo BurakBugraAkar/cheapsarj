@@ -99,35 +99,35 @@
       </h1>
     </div>
 
-    <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay2" data-dropdown-delay="500" data-dropdown-trigger="hover" class="text-white border border-[#4caf50] bg-[#4caf50] hover:bg-transparent focus:ring-4 focus:outline-none focus:ring-[#4caf50] font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">Şarj Soketi <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
-    <!-- Dropdown menu -->
-    <div id="dropdownDelay2" class="z-10 hidden bg-[#2d3040] divide-y divide-gray-100 rounded-lg shadow w-auto">
-      <ul class="py-2  text-sm" aria-labelledby="dropdownDelayButton">
-        <li>
-          <a href="#" class="block px-4 py-2 hover:bg-[#3f4357] ">AC Fiyat Karşılaşmtırması</a>
-        </li>
-        <li>
-          <a href="#" class="block px-4 py-2 hover:bg-[#3f4357] ">DC Fiyat Karşılaşmtırması</a>
-        </li>
-    </div>
-    <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500" data-dropdown-trigger="hover" class="text-white border border-[#4caf50] bg-[#4caf50] hover:bg-transparent focus:ring-4 focus:outline-none focus:ring-[#4caf50] font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">Karşılaştırma <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+    <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500" data-dropdown-trigger="hover" class="text-white border border-[#4caf50] bg-[#4caf50] hover:bg-transparent focus:ring-4 focus:outline-none focus:ring-[#4caf50] font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button"><a id="dropdownDelayButton_text">Şarj Soketi</a> <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
     <!-- Dropdown menu -->
     <div id="dropdownDelay" class="z-10 hidden bg-[#2d3040] divide-y divide-gray-100 rounded-lg shadow w-auto">
-        <ul class="py-2  text-sm" aria-labelledby="dropdownDelayButton">
-          <li>
-            <a href="#" class="block px-4 py-2 hover:bg-[#3f4357] ">A'dan Z'ye Şirket Adı</a>
+      <ul class="py-2  text-sm" aria-labelledby="dropdownDelayButton">
+        <li id="socket_1">
+          <a class="block px-4 py-2 hover:bg-[#3f4357] ">AC Fiyat Karşılaşmtırması</a>
+        </li>
+        <li id="socket_2">
+          <a class="block px-4 py-2 hover:bg-[#3f4357] ">DC Fiyat Karşılaşmtırması</a>
+        </li>
+    </div>
+    <button id="dropdownDelayButton2" data-dropdown-toggle="dropdownDelay2" data-dropdown-delay="500" data-dropdown-trigger="hover" class="hidden text-white border border-[#4caf50] bg-[#4caf50] hover:bg-transparent focus:ring-4 focus:outline-none focus:ring-[#4caf50] font-medium rounded-lg text-sm px-4 py-2.5 text-center items-center" type="button"><a id="dropdownDelayButton2_text">Karşılaştırma</a><svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+    <!-- Dropdown menu -->
+    <div id="dropdownDelay2" class="z-10 hidden bg-[#2d3040] divide-y divide-gray-100 rounded-lg shadow w-auto">
+        <ul id="search_list" class="py-2  text-sm" aria-labelledby="dropdownDelayButton2">
+          <li class="cursor-pointer">
+            <a id="type_1" class="block px-4 py-2 hover:bg-[#3f4357] ">A'dan Z'ye Şirket Adı</a>
           </li>
           <li>
-            <a href="#" class="block px-4 py-2 hover:bg-[#3f4357] ">60 kW Ucuzdan Pahalıya</a>
+            <a id="type_2" class="block px-4 py-2 hover:bg-[#3f4357] ">60 kW Ucuzdan Pahalıya</a>
           </li>
           <li>
-            <a href="#" class="block px-4 py-2 hover:bg-[#3f4357] ">60 kW Pahalıdan Ucuza</a>
+            <a id="type_3" class="block px-4 py-2 hover:bg-[#3f4357] ">60 kW Pahalıdan Ucuza</a>
           </li>
           <li>
-            <a href="#" class="block px-4 py-2 hover:bg-[#3f4357] ">300 kW Ucuzdan Pahalıya</a>
+            <a id="type_4" class="block px-4 py-2 hover:bg-[#3f4357] ">300 kW Ucuzdan Pahalıya</a>
           </li>
           <li>
-            <a href="#" class="block px-4 py-2 hover:bg-[#3f4357] ">300 kW Pahalıdan Ucuza</a>
+            <a id="type_5" class="block px-4 py-2 hover:bg-[#3f4357] ">300 kW Pahalıdan Ucuza</a>
           </li>
         </ul>
       </div>
@@ -137,7 +137,7 @@
     <table
       class="whitespace-nowrap max-w-[1200px] max- min-w-full divide-y-2 divide-[#272934] bg-white text-sm dark:divide-[#272934] dark:bg-[#2d3040] shadow-xl m-auto"
     >
-      <thead class="ltr:text-left rtl:text-right">
+      <thead id="table_header" class="ltr:text-left rtl:text-right">
         <tr>
           <th
             class="whitespace-nowrap px-4 py-2 font-medium text-gray-900 dark:text-white"
@@ -155,13 +155,27 @@
             300 kW ve Altı Fiyat	
           </th>
           <th
-            class="whitespace-nowrap max-w-[100px] py-2 font-medium text-gray-900 dark:text-white"
+            class="whitespace-nowrap max-w-[120px] py-2 font-medium text-gray-900 dark:text-white"
           >
           İstasyon Haritası
           </th>
         </tr>
       </thead>
-      <tbody class="divide-y divide-gray-200 dark:divide-gray-700" id="charing_table"></tbody>
+      <tbody class="divide-y divide-gray-200 dark:divide-gray-700" id="charing_table">
+        <tr>
+          <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900 dark:text-white">
+            <div class="flex gap-x-4">
+              <img class="h-10 w-10 flex-none rounded-full bg-gray-50 " src="${element.logo}" alt="">
+              <p class="my-auto pl-4">${element.name}</p>
+            </div>
+          </td>
+          <td class="whitespace-nowrap px-4 py-2 text-gray-700 dark:text-gray-200 text-center">${element.dc60} TL/kWh</td>
+          <td class="whitespace-nowrap px-4 py-2 text-gray-700 dark:text-gray-200 text-center">${element.dc300} TL/kWh	</td>
+          <td class="whitespace-nowrap px-4 py-2 text-center">
+            <a href="${element.charge_map}" class="inline-block rounded border border-[#4caf50] bg-[#4caf50] hover:bg-transparent px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700">Harita</a>
+          </td>
+        </tr>
+      </tbody>
     </table>
   </div>
   <footer aria-label="Site Footer" class="bg-[#2d3040] dark:bg-[#2d3040]">
