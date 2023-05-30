@@ -6,6 +6,7 @@ $(document).ready(function () {
     $.getJSON("https://cheapsarj.com/anasayfa/json-api.php?api_key=IfQY4MNEPx687EV", function (data) {
     let list = ""
     let table = document.getElementById("charing_table")
+
     data.forEach(element => {
         list += `<tr>
         <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900 dark:text-white">
